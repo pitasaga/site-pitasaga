@@ -1,4 +1,112 @@
-baseURL: https://example.org/
+baseURL: https://pitasaga.com/
 languageCode: en-us
-title: My New Hugo Site
+title: Sitename
 theme: PaperMod
+copyright: C Eric Ekholm
+
+enableRobotsTXT: true
+
+minify:
+  disableXML: false
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+#  author: Eric Ekholm
+
+# Home Page
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: profilemode name
+    subtitle: profiemode subtitle
+    imageUrl: "981-200x200.jpg"
+    imageWidth: 200
+    imageHeight: 200
+    imageTitle: profiemode image
+    buttons:
+      - name: PM-Posts
+        url: posts
+      - name: PM-Projects
+        url: projects
+
+  homeInfoParams:
+    Title: HomeInfo Title
+    Content: HomeInfo Content
+  
+  socialIcons:
+    - name: x
+      url: "https://x.com/"
+    - name: stackoverflow
+      url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/"
+
+# Formatting
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+
+# Interaction
+#  ShowShareButtons: true
+#  ShowWordCount: true
+
+# Navigation
+#  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+#  ShowTOC: true
+
+# SEO
+  env: production
+  keywords: [Blog, Portfolio, PaperMod]
+
+# Misc.
+#  mainSections:   # breaks archive & navigation
+#    - Posts
+
+# Seach Options
+  fuseOpts:
+    
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.3
+    minMatchCharLength: 3
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - name: Home
+      title: Home
+      pageRef: /
+      weight: 10
+
+    - name: Posts
+      title: Posts
+      pageRef: /posts
+#     pre: <i class="fa-solid fa-code"></i>
+      weight: 20
+
+    - name: Projects
+      title: Projects
+      pageRef: /projects
+      weight: 30
+
+    - name: Tags
+      title: Tags
+      pageRef: /tags
+      weight: 35
+
+    - name: Archives
+      title: Archive
+      pageRef: archive
+      weight: 40
+
+    - name: Search
+      title: Search
+      pageRef: search
+      weight: 50
