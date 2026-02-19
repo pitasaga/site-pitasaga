@@ -2,13 +2,18 @@ baseURL: https://pitasaga.com/
 languageCode: en-us
 title: Sitename
 theme: PaperMod
-copyright: C Eric Ekholm
+
+
 
 enableRobotsTXT: true
 
 minify:
   disableXML: false
   minifyOutput: true
+
+pagination:
+  disableAliases: false
+  pagerSize: 4
 
 outputs:
   home:
@@ -20,18 +25,21 @@ params:
 #  author: Eric Ekholm
 
 # Home Page
+
+  author: "Eric Ekholm"
+
   profileMode:
-    enabled: true # needs to be explicitly set
-    title: profilemode name
-    subtitle: profiemode subtitle
+    enabled: false # needs to be explicitly set
+    title: profileMode name
+    subtitle: profileMode subtitle
     imageUrl: "981-200x200.jpg"
-    imageWidth: 200
+    imageWidth: 200 prof
     imageHeight: 200
-    imageTitle: profiemode image
+    imageTitle: profileMode image
     buttons:
-      - name: PM-Posts
+      - name: profileMode-Posts
         url: posts
-      - name: PM-Projects
+      - name: profileMode-Projects
         url: projects
 
   homeInfoParams:
@@ -53,6 +61,14 @@ params:
 # Interaction
 #  ShowShareButtons: true
 #  ShowWordCount: true
+  ShowReadingTime: true
+  hideAuthor: true
+
+# Edit post
+  editPost:
+    URL: "mailto://mail@example.com?subject=Change Request for:  "
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
 
 # Navigation
 #  ShowBreadCrumbs: true
@@ -73,7 +89,7 @@ params:
     shouldSort: true
     location: 0
     distance: 1000
-    threshold: 0.3
+    threshold: 0.1
     minMatchCharLength: 3
     # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
@@ -91,22 +107,27 @@ menu:
 #     pre: <i class="fa-solid fa-code"></i>
       weight: 20
 
+    - name: Tags
+      title: Tags
+      pageRef: /tags
+      weight: 25
+
     - name: Projects
       title: Projects
       pageRef: /projects
       weight: 30
 
-    - name: Tags
-      title: Tags
-      pageRef: /tags
-      weight: 35
-
-    - name: Archives
+    - name: Archive
       title: Archive
-      pageRef: archive
+      pageRef: /archive
       weight: 40
+
+    - name: Links
+      title: Links
+      pageRef: /links
+      weight: 45
 
     - name: Search
       title: Search
-      pageRef: search
+      pageRef: /search
       weight: 50
