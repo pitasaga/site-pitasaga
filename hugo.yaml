@@ -95,8 +95,11 @@ params:
     minMatchCharLength: 3
     # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
+  footer:
+    text: # TODO disclaimer
 
 menu:
+
   main:
     - name: Home
       title: Home

@@ -1,5 +1,5 @@
 ---
 title: Search
-placeholder: 
+placeholder: "Search Posts:"
 layout: search
 ---
