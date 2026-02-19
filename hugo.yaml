@@ -3,7 +3,9 @@ languageCode: en-us
 title: Sitename
 theme: PaperMod
 
-
+caches:
+  caches.images:
+    dir: ":cachedir/images"
 
 enableRobotsTXT: true
 
