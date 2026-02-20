@@ -1,0 +1,21 @@
+:root {
+
+    --rot-deg: 3deg;
+    --rot-deg-rev: -3deg;
+    --btn-scale1: 1.1;
+    --btn-scale2: 0.9;
+
+    --accent1: rgb(174,82,36);
+    --accent2: rgb(252,179,21);
+    --accent3: rgb(0,147,155);
+    --accent4: rgb(64,69,106);
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    --accent1: rgb(174,82,36);
+    --accent2: rgb(252,179,21);
+    --accent3: rgb(0,147,155);
+    --accent4: rgb(64,69,106);
+    color-scheme: dark;
+}

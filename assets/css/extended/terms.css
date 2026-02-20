@@ -1,15 +1,16 @@
-
-.button {
+.terms-tags a {
     background: var(--accent4);
 }
 
-.button:hover {
+.terms-tags a:hover {
     color: black;
-    background-color: var(--accent3);
+    background: var(--accent3);
     transform: scale(var(--btn-scale1)) rotate(var(--rot-deg));
 }
 
-.button:active {
-    background-color: var(--accent1);
+.terms-tags a:active {
+    background: var(--accent1);
     transform: scale(var(--btn-scale2)) rotate(var(--rot-deg-rev));
 }
+
+

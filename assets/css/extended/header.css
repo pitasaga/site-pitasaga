@@ -2,35 +2,33 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background: var(--tertiary);
+    background: var(--accent4);
 }
 
 .logo a:hover {
-    transition: 0.15s;
-    color: grey;
+    transition: 100ms;
+    color: var(--accent2);
 }
 
 /* theme toggle hover */
 
 #moon:hover {
-    transition: 0.15s;
-    color: deepskyblue;
+    transition: 100ms;
+    color: var(--accent3);
 }
 
 #sun:hover {
-    transition: 0.15s;
-    color: gold;
+    transition: 100ms;
+    color: var(--accent2);
 }
 
 #menu a:hover {
-    transition: 0.15s;
-    color: grey;
+    transition: 100ms;
+    color: var(--accent2);
 }
 
-/* social hover */
-
 svg:hover {
-    transition: 0.15s;
+    transition: 100ms;
 }
 
 .social-icons a:nth-child(1) svg:hover{

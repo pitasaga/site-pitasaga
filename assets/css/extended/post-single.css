@@ -1,15 +1,14 @@
-
-.button {
+.post-tags a {
+    color: var(--secondary);
     background: var(--accent4);
 }
 
-.button:hover {
+.post-tags a:hover {
     color: black;
     background-color: var(--accent3);
     transform: scale(var(--btn-scale1)) rotate(var(--rot-deg));
 }
 
-.button:active {
-    background-color: var(--accent1);
+.post-tags a:active {
     transform: scale(var(--btn-scale2)) rotate(var(--rot-deg-rev));
 }
