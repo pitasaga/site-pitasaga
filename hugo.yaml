@@ -1,6 +1,6 @@
 baseURL: https://pitasaga.com/
 languageCode: en-us
-title: Sitename
+title: P.I.T.A. Saga
 theme: PaperMod
 
 caches:
@@ -31,30 +31,31 @@ params:
   author: "Eric Ekholm"
 
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: profileMode name
-    subtitle: profileMode subtitle
+    enabled: true # needs to be explicitly set
+    title: Eric Ekholm
+    subtitle: "Mind over matter - if you don't mind, it don't matter"
     imageUrl: "981-200x200.jpg"
     imageWidth: 200 prof
     imageHeight: 200
     imageTitle: profileMode image
     buttons:
-      - name: profileMode-Posts
+      - name: Posts
         url: posts
-      - name: profileMode-Projects
+      - name: Projects
         url: projects
 
   homeInfoParams:
-    Title: HomeInfo Title
-    Content: HomeInfo Content
+    Title: HomeInfo Eric Ekholm
+    Content: A pain-in-the-ass adventure through learning
+
   
   socialIcons:
-    - name: x
-      url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    - name: soundcloud
+      url: https:example.com # TODO
+    - name: steam
+      url: "https://steamcommunity.com/id/pitasaga"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/pitasaga"
 
 # Formatting
   DateFormat: "January 2, 2006"
@@ -68,7 +69,7 @@ params:
 
 # Edit post
   editPost:
-    URL: "mailto://mail@example.com?subject=Change Request for:  "
+    URL: "mailto://eric@pitasaga.com?subject=Change Request for:  "
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -79,7 +80,7 @@ params:
 
 # SEO
   env: production
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Blog, Portfolio, PaperMod] # TODO
 
 # Misc.
 #  mainSections:   # breaks archive & navigation
@@ -101,38 +102,33 @@ params:
 menu:
 
   main:
-    - name: Home
+    - name: ⌂ Home
       title: Home
       pageRef: /
       weight: 10
 
-    - name: Posts
+    - name: 🕮 Posts
       title: Posts
       pageRef: /posts
 #     pre: <i class="fa-solid fa-code"></i>
       weight: 20
 
-    - name: Tags
+    - name: ➜ Tags
       title: Tags
       pageRef: /tags
       weight: 25
 
-    - name: Projects
+    - name: ➜ Projects
       title: Projects
       pageRef: /projects
       weight: 30
 
-    - name: Archive
+    - name: ➜ Archive
       title: Archive
       pageRef: /archive
       weight: 40
 
-    - name: Links
-      title: Links
-      pageRef: /links
-      weight: 45
-
-    - name: Search
+    - name: ⌕
       title: Search
       pageRef: /search
-      weight: 50
+      weight: 60
