@@ -10,8 +10,6 @@
     color: var(--accent2);
 }
 
-/* theme toggle hover */
-
 #moon:hover {
     transition: 100ms;
     color: var(--accent3);
@@ -29,13 +27,5 @@
 
 svg:hover {
     transition: 100ms;
+    color: var(--accent1);
 }
-
-.social-icons a:nth-child(1) svg:hover{
-    color: #C84370 !important;
-}
-
-.social-icons a:nth-child(2) svg:hover {
-    color: grey !important;
-}
-

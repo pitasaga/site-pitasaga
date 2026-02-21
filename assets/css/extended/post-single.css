@@ -10,5 +10,37 @@
 }
 
 .post-tags a:active {
+    background-color: var(--accent1);
     transform: scale(var(--btn-scale2)) rotate(var(--rot-deg-rev));
+}
+
+.paginav {
+    background: var(--theme);
+    border: 0;
+}
+.paginav a {
+    display: block;
+    padding: 0 14px;
+    font-size: 14px;
+    line-height: 34px;
+    color: var(--primary);
+    background: var(--accent4);
+}
+
+.paginav .next,
+.paginav .prev {
+    width:35%;
+}
+
+.paginav .title {
+    color: var(--primary);   
+}
+
+.paginav a:hover {
+    color: black;
+    background-color: var(--accent3);
+}
+
+.paginav a:active {
+    background-color: var(--accent1);
 }
